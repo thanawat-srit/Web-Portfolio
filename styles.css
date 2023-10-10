@@ -1,0 +1,283 @@
+  body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  #profile>img {
+    width: 25%;
+    border: 5px solid #fff;
+    border-radius: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  #Projectprofile>img {
+    width: 25%;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  a img#projectimg {
+    width: 120px;
+    box-shadow: 0 4px 8px 0 #707070, 0 6px 20px 0 #707070;
+    border-radius: 10%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .header h1 {
+    font-size: 36px;
+  }
+
+  .grid-container-index {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+  }
+
+  .grid-container-index>div {
+    text-align: center;
+    padding: 10px;
+    background-color: #444;
+  }
+
+  .grid-container-project {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+  }
+
+  .grid-container-project>div {
+    text-align: center;
+    padding: 10px;
+    background-color: #444;
+  }
+
+  .grid-container-description {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+  }
+
+  .grid-container-description>div {
+
+    text-align: center;
+    padding: 10px;
+  }
+
+  .grid-container-description>img.map {
+    width: 20%;
+    padding: 10px;
+  }
+
+  .statushead {
+    display: inline-block;
+    text-align: left;
+  }
+
+  #hobby {
+    grid-column: 1 / span 2;
+  }
+
+  #skill {
+    grid-column: 3 / span 2;
+  }
+
+  #attention {
+    grid-column: 5 / span 2;
+  }
+
+  #characterHead {
+    grid-column: 1 / span 6;
+  }
+
+  #tankHead {
+    grid-column: 1 / span 1;
+  }
+
+  #knightHead {
+    grid-column: 2 / span 1;
+  }
+
+  #archerHead {
+    grid-column: 3 / span 1;
+  }
+
+  #mageHead {
+    grid-column: 4 / span 1;
+  }
+
+  #healerHead {
+    grid-column: 5 / span 1;
+  }
+
+  #bardHead {
+    grid-column: 6 / span 1;
+  }
+
+  .characterstat {
+    grid-column: 1 / span 2;
+  }
+
+  .charactermove {
+    grid-column: 3 / span 2;
+  }
+
+  .characterattack {
+    grid-column: 5 / span 2;
+  }
+
+  #map {
+    grid-column: 1 / span 6;
+  }
+
+  div .headAbout {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    margin: 10px;
+  }
+
+  div.descriptionAbout {
+    display: inline-block;
+    text-align: left;
+  }
+
+  div .descriptionAbout li {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .grid-container-project img {
+    width: 100px;
+  }
+
+  .grid-container-description img.icon {
+    text-align: center;
+    width: 120px;
+    margin: 5px;
+  }
+
+  .grid-container-description img.status {
+    width: 40px;
+    padding-right: 20px;
+  }
+
+  .charactermove img {
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 #707070, 0 6px 20px 0 #707070;
+  }
+
+  .characterattack img {
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 #707070, 0 6px 20px 0 #707070;
+  }
+
+  img.map {
+    width: 400px;
+    box-shadow: 0 4px 8px 0 #707070, 0 6px 20px 0 #707070;
+  }
+
+  .main-content {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .portfolio-item {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+  }
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+
+  @media screen and (max-width: 800px) {
+    .container {
+      padding: 10px;
+    }
+
+    .header h1 {
+      font-size: 24px;
+    }
+
+    #hobby {
+      grid-column: 1 / span 6;
+    }
+
+    #skill {
+      grid-column: 1 / span 3;
+    }
+
+    #attention {
+      grid-column: 4 / span 3;
+    }
+
+    #characterHead {
+      grid-column: 1 / span 6;
+    }
+
+    #tankHead {
+      grid-column: 1 / span 2;
+    }
+
+    #knightHead {
+      grid-column: 3 / span 2;
+    }
+
+    #archerHead {
+      grid-column: 5 / span 2;
+    }
+
+    #mageHead {
+      grid-column: 1 / span 2;
+    }
+
+    #healerHead {
+      grid-column: 3 / span 2;
+    }
+
+    #bardHead {
+      grid-column: 5 / span 2;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .characterstat {
+      grid-column: 1 / span 2;
+    }
+
+    .charactermove {
+      grid-column: 3 / span 4;
+    }
+
+    .characterattack {
+      grid-column: 3 / span 4;
+    }
+  }
