@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(46, 46, 46);
+}
+
+form{
+    background-color: rgba(76, 76, 76, 0.523);
+    /* border-radius: 20%; */
+    color: aliceblue;
+}
+
+legend{
+    font-size: 170%;
+}
+
+#submit{
+    background-color :rgb(133, 255, 127);
+}
+#reset{
+    background-color :rgb(255, 127, 127);
+}

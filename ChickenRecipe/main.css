@@ -1,0 +1,145 @@
+.grid-container {
+	display: grid;
+    grid-template-columns: 10% auto auto;
+    grid-gap: 10px;
+}
+
+.grid-container > div{
+    /* border: 1px solid black; */
+    font-size: 20px;
+    text-align: center;
+    background-color:white;
+}
+
+#header{
+    grid-column: 1 / span 3;
+}
+
+#left{
+    grid-column: 1 / span 1;
+}
+
+#main1{
+    grid-column: 2 / span 1;
+}
+#main2{
+    grid-column: 3 / span 1;
+}
+
+#footer{
+    grid-column: 1 / span 3;
+}
+
+@media only screen and (max-width: 768px) {
+	.grid-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+    #header{
+        grid-column: 1 / span 2;
+    }
+    
+    #left{
+        grid-column: 1 / span 2;
+        text-align: center;
+    }
+    
+    #left div{
+        display: inline-block;
+    }
+
+    #main1{
+        grid-column: 1 / span 1;
+    }
+    #main2{
+        grid-column: 2 / span 1;
+    }
+    #footer{
+        grid-column: 1 / span 2;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+	.grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+    #header{
+        grid-column: 1 / span 1;
+    }
+    
+    #left{
+        grid-column: 1 / span 1;
+    }
+    
+    #main1{
+        grid-column: 1 / span 1;
+    }
+    #main2{
+        grid-column: 1 / span 1;
+    }
+    #footer{
+        grid-column: 1 / span 1;
+    }
+}
+div{
+    text-align: center;
+}
+#head_img{
+    width: 50%;
+    border: 10px double rgb(118, 173, 255);
+    border-radius: 60px;
+}
+h1,h2{
+    background-color: rgb(118, 173, 255); 
+    color: rgb(255, 255, 255);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 60px;
+}
+#ingredients_img{
+    width: 50%;
+    border-radius: 30px;
+    border: 5px solid rgb(118, 173, 255);
+}
+ul{
+    margin:auto;
+}
+li{
+    margin: auto;
+    text-align: left;
+    
+}
+.a{
+    border: 10px solid rgb(118, 173, 255);
+    border-radius: 30px;
+}
+.b{
+    width: 100%;
+    border-radius: 30px;
+    border: 5px solid rgb(118, 173, 255);
+}
+.flex_container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.flex_container > div{
+    width: 200px;
+    margin : 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+#left img{
+    width:100%;
+}
+
+#left div{
+    margin-bottom: 20px;
+}

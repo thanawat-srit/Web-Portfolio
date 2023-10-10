@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TacMove</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="header">
+      <div id="Projectprofile">
+        <img src="Project/project.png" alt="Projecticon" />
+      </div>
+      <h1>TacMove</h1>
+      <p>Turn based strategy game</p>
+    </header>
+    <div class="grid-container-project">
+      <div id="characterHead">
+        <h1 class="headAbout">Character</h1>
+      </div>
+      <div id="tankHead">
+        <a href="#tankDetail"><img id="tankicon" src="Project/IconTank.png" alt="IconTank" /></a>
+        <h1 class="headAbout">Tank</h1>
+      </div>
+      <div id="knightHead">
+        <a href="#knightDetail"><img id="knighticon" src="Project/IconKnight.png" alt="IconKnight" /></a>
+        <h1 class="headAbout">Knight</h1>
+      </div>
+      <div id="archerHead">
+        <a href="#archerDetail"><img id="archericon" src="Project/IconArcher.png" alt="IconArcher" /></a>
+        <h1 class="headAbout">Archer</h1>
+      </div>
+      <div id="mageHead">
+        <a href="#mageDetail"><img id="mageicon" src="Project/IconMage.png" alt="IconMage" /></a>
+        <h1 class="headAbout">Mage</h1>
+      </div>
+      <div id="healerHead">
+        <a href="#healerDetail"><img id="healericon" src="Project/IconHealer.png" alt="IconHealer" /></a>
+        <h1 class="headAbout">Healer</h1>
+      </div>
+      <div id="bardHead">
+        <a href="#bardDetail"><img id="bardicon" src="Project/IconBard.png" alt="IconBard" /></a>
+        <h1 class="headAbout">Bard</h1>
+      </div>
+    </div>
+
+    <main class="main-content">
+      <section id="Game Rule">
+        <div class="portfolio-item">
+          <h2>Game Rule</h2>
+          <p>เล่นบน<a href="#mapDetail">แผนที่</a>ตารางขนาด 8 x 12 ช่อง โดยเริ่มที่ Move phase > Combat Phase > Prepare Phase
+            เล่นจนกว่าฝังใดฝังหนึ่งตัวละครหมดหรือผ่านไป 15 รอบแล้วฝังที่มีพลังชีวิตรวมมากที่สุดจะผู้ชนะ</p>
+        </div>
+      </section>
+
+      <section id="Game Phase">
+        <div class="portfolio-item">
+          <h2>Game Phase</h2>
+          <h3>Move Phase</h3>
+          <p>แต่ละฝังจะมีพลังงานเริ่มต้นฝังละ 4 หน่วย ให้ผลัดกันเดินหมากจนกว่าพลังงานจะหมดหรือกดข้ามทั้งสองฝัง</p>
+          <ul>
+            <li>Move เสียพลังงาน 1 หน่วย</li>
+            <li>Skip ข้ามการเดินรอบนั้น</li>
+          </ul>
+          <h3>Combat Phase</h3>
+          <ul>
+            <li>Bard จะเพิ่มสถานะให้กับทุกตัวละครที่อยู่ในระยะ Buff</li>
+            <li>Healer จะรักษาตัวละครฝังเดียวกันที่มีพลังชีวิตน้อยที่สุด 1 ตัวตามค่าพลังโจมตี</li>
+            <li>ตัวละคะแต่ละฝังโจมตีตามลำดับ</li>
+            <ol>
+              <li>Bard</li>
+              <li>Knight</li>
+              <li>Tank</li>
+              <li>Archer</li>
+              <li>Mage</li>
+              <li>Healer</li>
+            </ol>
+            <li>ลำดับความสำคัญของการรับการโจมตี</li>
+            <ol>
+              <li>Tank</li>
+              <li>ตัวละครที่พลังชีวิตน้อยที่สุด</li>
+            </ol>
+          </ul>
+          <h3>Prepare Phase</h3>
+          <ul>
+            <li>ซ้อมแซมเกราะป้องกัน</li>
+            <li>นำพลังงานที่เหลือจากรอบนี้เก็บไว้ที่พลังงานสำรอง (พลังงานสำรอง สามารถนำไปใช้รอบต่อไปได้ เก็บได้มากสุด 2
+              หน่วย)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="Character">
+
+        <div class="portfolio-item">
+          <h2>Character Detail</h2>
+          <div class="portfolio-item">
+            <div id="tankDetail" class="grid-container-description">
+              <div class="characterstat">
+                <h1>Tank</h1>
+                <img class="icon" src="Project/IconTank.png" alt="IconTank" /><br>
+                <div class="statushead">
+                  <h3><img class="status" src="Project/Heart.png" alt="Heart" />7</h3>
+                  <h3><img class="status" src="Project/Attack.png" alt="Attack" />1</h3>
+                  <h3><img class="status" src="Project/Shield.png" alt="Shield" />2 + 1</h3>
+                </div>
+              </div>
+              <div class="charactermove">
+                <h1>Move Pattern</h1>
+                <img src="Project/MoveTank.png" alt="MoveTank" />
+              </div>
+              <div class="characterattack">
+                <h1>Attack Pattern</h1>
+                <img src="Project/RangeTank.png" alt="RangeTank" />
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <div id="knightDetail" class="grid-container-description">
+              <div class="characterstat">
+                <h1>Knight</h1>
+                <img class="icon" src="Project/IconKnight.png" alt="IconKnight" /><br>
+                <div class="statushead">
+                  <h3><img class="status" src="Project/Heart.png" alt="Heart" />6</h3>
+                  <h3><img class="status" src="Project/Attack.png" alt="Attack" />2 + 1</h3>
+                  <h3><img class="status" src="Project/Shield.png" alt="Shield" />1</h3>
+                </div>
+              </div>
+              <div class="charactermove">
+                <h1>Move Pattern</h1>
+                <img src="Project/MoveKnight.png" alt="MoveKnight" />
+              </div>
+              <div class="characterattack">
+                <h1>Attack Pattern</h1>
+                <img src="Project/RangeKnight.png" alt="RangeKnight" />
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <div id="archerDetail" class="grid-container-description">
+              <div class="characterstat">
+                <h1>Archer</h1>
+                <img class="icon" src="Project/IconArcher.png" alt="IconArcher" /><br>
+                <div class="statushead">
+                  <h3><img class="status" src="Project/Heart.png" alt="Heart" />5</h3>
+                  <h3><img class="status" src="Project/Attack.png" alt="Attack" />2 + 1</h3>
+                  <h3><img class="status" src="Project/Shield.png" alt="Shield" />0</h3>
+                </div>
+              </div>
+              <div class="charactermove">
+                <h1>Move Pattern</h1>
+                <img src="Project/MoveArcher.png" alt="MoveArcher" />
+              </div>
+              <div class="characterattack">
+                <h1>Attack Pattern</h1>
+                <img src="Project/RangeArcher.png" alt="RangeArcher" />
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <div id="mageDetail" class="grid-container-description">
+              <div class="characterstat">
+                <h1>Mage</h1>
+                <img class="icon" src="Project/IconMage.png" alt="IconMage" /><br>
+                <div class="statushead">
+                  <h3><img class="status" src="Project/Heart.png" alt="Heart" />5</h3>
+                  <h3><img class="status" src="Project/Attack.png" alt="Attack" />2 + 1</h3>
+                  <h3><img class="status" src="Project/Shield.png" alt="Shield" />0</h3>
+                </div>
+              </div>
+              <div class="charactermove">
+                <h1>Move Pattern</h1>
+                <img src="Project/MoveMage.png" alt="MoveMage" />
+              </div>
+              <div class="characterattack">
+                <h1>Attack Pattern</h1>
+                <img src="Project/RangeMage.png" alt="RangeMage" />
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <div id="healerDetail" class="grid-container-description">
+              <div class="characterstat">
+                <h1>Healer</h1>
+                <img class="icon" src="Project/IconHealer.png" alt="IconHealer" /><br>
+                <div class="statushead">
+                  <h3><img class="status" src="Project/Heart.png" alt="Heart" />5</h3>
+                  <h3><img class="status" src="Project/Attack.png" alt="Attack" />2 + 1</h3>
+                  <h3><img class="status" src="Project/Shield.png" alt="Shield" />0</h3>
+                </div>
+              </div>
+              <div class="charactermove">
+                <h1>Move Pattern</h1>
+                <img src="Project/MoveHealer.png" alt="MoveHealer" />
+              </div>
+              <div class="characterattack">
+                <h1>Heal Pattern</h1>
+                <img src="Project/RangeHealer.png" alt="RangeHealer" />
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <div id="bardDetail" class="grid-container-description">
+              <div class="characterstat">
+                <h1>Bard</h1>
+                <img class="icon" src="Project/IconBard.png" alt="IconBard" /><br>
+                <div class="statushead">
+                  <h3><img class="status" src="Project/Heart.png" alt="Heart" />4</h3>
+                  <h3><img class="status" src="Project/Attack.png" alt="Attack" />0</h3>
+                  <h3><img class="status" src="Project/Shield.png" alt="Shield" />0</h3>
+                </div>
+              </div>
+              <div class="charactermove">
+                <h1>Move Pattern</h1>
+                <img src="Project/MoveBard.png" alt="MoveBard" />
+              </div>
+              <div class="characterattack">
+                <h1>Buff Pattern</h1>
+                <img src="Project/RangeBard.png" alt="RangeBard" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <div class="portfolio-item">
+        <h2>Map Detail</h2>
+        <div id="mapDetail" class="grid-container-description">
+          <div id="map">
+            <img class="map" src="Project/Map.png" alt="Map" />
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <footer class="footer">
+      by Thanva
+    </footer>
+  </div>
+</body>
+
+</html>
